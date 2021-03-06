@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: url(fonts/SourceSansPro-Bold.ttf);
+}
+
+
+header {
+    background-image: url("images/header.png");
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-image: url("images/footer.png");
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: palegreen;
+    color: green;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: medium;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* links start */
+a {
+    color: green;
+    font-size: 30px;
+}
+
+a:hover {
+    background-color: mediumpurple;
+    color: lime;
+}
+
+.selected_page {
+    color: darkgreen;
+    font-family: "Source Sans Pro Bold", sans-serif;
+}
+/* links end */
+
+.list {
+    padding-left: 10px;
+}
+li {
+    list-style-image: url("images/list-image1.png");
+
+}
+
+.email {
+    margin: 1em;
+    border: 3px solid mediumpurple;
+    padding: 30px;
+    background-size: 40%;
+}
+
+.uwu {
+    font-size: 40px;
+    font-weight: bold;
+    color: mediumpurple;
+    padding-bottom: 100px;
+}
+
+.uwu:hover {
+    background-image: url("images/list-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    text-indent: -9999px;
+}
+
+.uwu:visited {
+    background-image: url("images/background.png");
+}
+
+/*rare_picture start*/
+.rare_picture {
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+.rare_picture:visited {
+    color: mediumpurple;
+}
+
+.rare_picture:hover{
+    color: lime;
+}
+/*rare_picture end*/
+
+/* figure start */
+#portrait {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 400px;
+    padding-bottom: 30px;
+}
+
+#portrait img {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+    border: 6px solid darkgreen;
+}
+
+#portrait figcaption {
+    align-self: flex-end;
+    color: darkgreen;
+    font-size: 22px;
+    margin-top: -20px;
+}
+/* figure end */
+
+
+#flowers img {
+    padding-top: 50px;
+}
+
+/* table start */
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table h2 {
+    font-family: "Source Sans Pro Bold", sans-serif;
+    font-size: 30px;
+    margin-bottom: -40px;
+    align-self: center;
+}
+
+table {
+    margin: 3em;
+    border: 3px solid darkgreen;
+    background-color: lime;
+}
+
+.table th {
+    font-weight: bold;
+    font-size: 25px;
+    color: lime;
+    background-color: mediumpurple;
+}
+
+.merk {
+    font-family: "Source Sans Pro Bold", sans-serif;
+}
+/* table end*/
+
+@media screen and (min-width: 767.98px) {
+
+    .container {
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: safe center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    header, footer {
+        background-size: 75% ;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .container {
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: safe center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: safe center;
+    }
+
+    #portrait {
+        width: 75%;
+        height: auto;
+        align-self: center;
+    }
+
+    .list {
+        padding-left: 100px;
+    }
+
+    #flowers img{
+        width: 100%;
+        height: auto;
+    }
+
+}
